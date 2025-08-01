@@ -1,0 +1,8 @@
+{
+    "rules": [
+        {"reason": "Urgent", "days_to_expiry": 3},
+        {"reason": "High-Cost", "days_to_expiry": 30, "min_annual_cost": 10000},
+        {"reason": "Upcoming", "days_to_expiry": 14}
+    ],
+    "priority": ["Urgent", "High-Cost", "Upcoming"]
+}

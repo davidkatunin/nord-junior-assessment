@@ -1,0 +1,242 @@
+[
+    {
+        "id": 1,
+        "software_name": "GitHub Enterprise Cloud",
+        "owner": "Ava Chen",
+        "organization": "Nord Security",
+        "annual_cost_eur": 25200.00,
+        "renewal_date": "2025-08-02"
+    },
+    {
+        "id": 2,
+        "software_name": "Atlassian Jira Cloud (Premium)",
+        "owner": "Leo Martinez",
+        "organization": "Surfshark",
+        "annual_cost_eur": 17400.00,
+        "renewal_date": "2025-08-25"
+    },
+    {
+        "id": 3,
+        "software_name": "Microsoft 365 E5",
+        "owner": "Mia Schmidt",
+        "organization": "Nord Security",
+        "annual_cost_eur": 69600.00,
+        "renewal_date": "2025-08-11"
+    },
+    {
+        "id": 4,
+        "software_name": "AWS Business Support Plan",
+        "owner": "Kai Adebayo",
+        "organization": "Nord Security",
+        "annual_cost_eur": 14400.00,
+        "renewal_date": "2025-07-31"
+    },
+    {
+        "id": 5,
+        "software_name": "JetBrains All Products Pack (Corporate)",
+        "owner": "Isabella Rossi",
+        "organization": "Surfshark",
+        "annual_cost_eur": 9850.00,
+        "renewal_date": "2025-08-08"
+    },
+    {
+        "id": 6,
+        "software_name": "Google Workspace Enterprise Plus",
+        "owner": "Noah Patel",
+        "organization": "Surfshark",
+        "annual_cost_eur": 36000.00,
+        "renewal_date": "2026-01-15"
+    },
+    {
+        "id": 7,
+        "software_name": "Figma Organization Plan",
+        "owner": "Chloe Dubois",
+        "organization": "Nord Security",
+        "annual_cost_eur": 8100.00,
+        "renewal_date": "2025-09-01"
+    },
+    {
+        "id": 8,
+        "software_name": "Datadog Pro",
+        "owner": "Liam Garcia",
+        "organization": "Nord Security",
+        "annual_cost_eur": 21600.00,
+        "renewal_date": "2025-08-18"
+    },
+    {
+        "id": 9,
+        "software_name": "Slack Business+",
+        "owner": "Zoe Kim",
+        "organization": "Surfshark",
+        "annual_cost_eur": 15300.00,
+        "renewal_date": "2025-08-01"
+    },
+    {
+        "id": 10,
+        "software_name": "Zoom Business",
+        "owner": "Ethan Williams",
+        "organization": "Nord Security",
+        "annual_cost_eur": 2200.00,
+        "renewal_date": "2025-11-20"
+    },
+    {
+        "id": 11,
+        "software_name": "Docker Desktop Business",
+        "owner": "Sarah Thompson",
+        "organization": "Nord Security",
+        "annual_cost_eur": 7200.00,
+        "renewal_date": "2025-07-31"
+    },
+    {
+        "id": 12,
+        "software_name": "Terraform Cloud Team",
+        "owner": "Marcus Johnson",
+        "organization": "Surfshark",
+        "annual_cost_eur": 18500.00,
+        "renewal_date": "2025-08-01"
+    },
+    {
+        "id": 13,
+        "software_name": "Postman Enterprise",
+        "owner": "Elena Vasquez",
+        "organization": "Nord Security",
+        "annual_cost_eur": 4800.00,
+        "renewal_date": "2025-08-02"
+    },
+    {
+        "id": 14,
+        "software_name": "CircleCI Performance Plan",
+        "owner": "David Chang",
+        "organization": "Surfshark",
+        "annual_cost_eur": 12000.00,
+        "renewal_date": "2025-08-03"
+    },
+    {
+        "id": 15,
+        "software_name": "Notion Team Plan",
+        "owner": "Lisa Rodriguez",
+        "organization": "Nord Security",
+        "annual_cost_eur": 3600.00,
+        "renewal_date": "2025-08-05"
+    },
+    {
+        "id": 16,
+        "software_name": "MongoDB Atlas Dedicated",
+        "owner": "Alex Chen",
+        "organization": "Surfshark",
+        "annual_cost_eur": 24000.00,
+        "renewal_date": "2025-08-07"
+    },
+    {
+        "id": 17,
+        "software_name": "New Relic Pro",
+        "owner": "Rachel Green",
+        "organization": "Nord Security",
+        "annual_cost_eur": 8400.00,
+        "renewal_date": "2025-08-09"
+    },
+    {
+        "id": 18,
+        "software_name": "Salesforce Enterprise",
+        "owner": "James Wilson",
+        "organization": "Surfshark",
+        "annual_cost_eur": 45000.00,
+        "renewal_date": "2025-08-10"
+    },
+    {
+        "id": 19,
+        "software_name": "Miro Business Plan",
+        "owner": "Anna Kowalski",
+        "organization": "Nord Security",
+        "annual_cost_eur": 5400.00,
+        "renewal_date": "2025-08-12"
+    },
+    {
+        "id": 20,
+        "software_name": "Elastic Cloud Enterprise",
+        "owner": "Tom Anderson",
+        "organization": "Surfshark",
+        "annual_cost_eur": 31200.00,
+        "renewal_date": "2025-08-14"
+    },
+    {
+        "id": 21,
+        "software_name": "Adobe Creative Cloud Enterprise",
+        "owner": "Maria Gonzalez",
+        "organization": "Nord Security",
+        "annual_cost_eur": 16800.00,
+        "renewal_date": "2025-08-16"
+    },
+    {
+        "id": 22,
+        "software_name": "Stripe Terminal",
+        "owner": "Kevin O'Connor",
+        "organization": "Surfshark",
+        "annual_cost_eur": 2400.00,
+        "renewal_date": "2025-08-18"
+    },
+    {
+        "id": 23,
+        "software_name": "Kubernetes Enterprise Support",
+        "owner": "Fatima Al-Rashid",
+        "organization": "Nord Security",
+        "annual_cost_eur": 28800.00,
+        "renewal_date": "2025-08-20"
+    },
+    {
+        "id": 24,
+        "software_name": "Splunk Enterprise Security",
+        "owner": "Robert Taylor",
+        "organization": "Surfshark",
+        "annual_cost_eur": 52000.00,
+        "renewal_date": "2025-08-22"
+    },
+    {
+        "id": 25,
+        "software_name": "Hubspot Marketing Hub Professional",
+        "owner": "Jennifer Lee",
+        "organization": "Nord Security",
+        "annual_cost_eur": 9600.00,
+        "renewal_date": "2025-08-25"
+    },
+    {
+        "id": 26,
+        "software_name": "Okta Workforce Identity",
+        "owner": "Michael Brown",
+        "organization": "Surfshark",
+        "annual_cost_eur": 19200.00,
+        "renewal_date": "2025-08-27"
+    },
+    {
+        "id": 27,
+        "software_name": "Tableau Creator",
+        "owner": "Sophie Martin",
+        "organization": "Nord Security",
+        "annual_cost_eur": 8100.00,
+        "renewal_date": "2025-09-02"
+    },
+    {
+        "id": 28,
+        "software_name": "PagerDuty Business",
+        "owner": "Daniel Kim",
+        "organization": "Surfshark",
+        "annual_cost_eur": 14400.00,
+        "renewal_date": "2025-09-15"
+    },
+    {
+        "id": 29,
+        "software_name": "HashiCorp Vault Enterprise",
+        "owner": "Emma Thompson",
+        "organization": "Nord Security",
+        "annual_cost_eur": 36000.00,
+        "renewal_date": "2025-10-01"
+    },
+    {
+        "id": 30,
+        "software_name": "Vercel Pro Team",
+        "owner": "Lucas Silva",
+        "organization": "Surfshark",
+        "annual_cost_eur": 6000.00,
+        "renewal_date": "2025-12-10"
+    }
+]

@@ -1,0 +1,15 @@
+{
+  "name": "nord-junior-assessment",
+  "version": "1.0.0",
+  "description": "Junior Assessment for Nord Security",
+  "main": "script.ts",
+  "scripts": {
+    "start": "ts-node script.ts"
+  },
+  "author": "David Katunin",
+  "devDependencies": {
+    "@types/node": "^24.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}
