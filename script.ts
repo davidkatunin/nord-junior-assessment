@@ -48,13 +48,20 @@ for (let contract of contracts) {
         }
     }
 
-    // Check conditions in priority order: Urgent (3 days), High-Cost (30 days + 10k), Upcoming (14 days)
-    if (days_until_renewal <= 3) {
-        reason = "Urgent"
-    } else if (days_until_renewal <= 30 && contract_annual_cost >= 10000) {
-        reason = "High-Cost"
-    } else if (days_until_renewal <= 14) {
-        reason = "Upcoming"
+    // Check conditions using config rules in priority order
+    for (let rule of config.rules) {
+        if (days_until_renewal <= rule.days_to_expiry) {
+            // Check if there's a minimum annual cost requirement
+            if (rule.min_annual_cost) {
+                if (contract_annual_cost >= rule.min_annual_cost) {
+                    reason = rule.reason;
+                    break;
+                }
+            } else {
+                reason = rule.reason;
+                break;
+            }
+        }
     }
 
     // if reason given, generate notification and output
@@ -78,4 +85,8 @@ for (let contract of contracts) {
 }
 
 fs.writeFileSync('notification_log.json', JSON.stringify(log, null, 2))
-console.log(output);
+if (output.length == 0) {
+    console.log("No New Notifications!")
+} else {
+    console.log(output);
+}
