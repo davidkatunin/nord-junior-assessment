@@ -22,7 +22,20 @@ interface OutputContracts {
 let currentDate = new Date(Date.now());
 let contracts = JSON.parse(fs.readFileSync('contracts.json', 'utf8'));
 let config = JSON.parse(fs.readFileSync('config.json', 'utf8'));
-let log: ContractNotification = JSON.parse(fs.readFileSync('notification_log.json', 'utf8'));
+
+let log: ContractNotification;
+if (fs.existsSync('notification_log.json')) {
+    const notiFile = fs.readFileSync('notification_log.json', 'utf8');
+    if (notiFile.trim() === '') {
+        fs.writeFileSync('notification_log.json', '{}');
+        log = {};
+    } else {
+        log = JSON.parse(notiFile);
+    }
+} else {
+    fs.writeFileSync('notification_log.json', '{}');
+    log = {};
+}
 
 // JSON Array to store the output
 let output: OutputContracts[] = []
@@ -31,7 +44,7 @@ let output: OutputContracts[] = []
 for (let contract of contracts) {
     // Check if contract.id is already in the notification log
     let notifiedPrevously = log[contract.id];
-    
+
     if (notifiedPrevously && notifiedPrevously.reason === "Urgent") {
         continue;
     }
@@ -42,6 +55,7 @@ for (let contract of contracts) {
     let days_until_renewal = Math.ceil((contract_renewal_date.getTime() - currentDate.getTime()) / 86400000);
     let reason;
 
+    // if previously notified for another reason, check if reason turns to Urgent
     if (notifiedPrevously) {
         if (days_until_renewal > 3) {
             continue;
@@ -76,7 +90,7 @@ for (let contract of contracts) {
             "software_name": contract.software_name,
             "owner": contract.owner,
             "organization": contract.organization,
-            "annual_cost_eur": contract_annual_cost,
+            "annual_cost_eur": contract_annual_cost.toFixed(2),
             "renewal_date": contract_renewal_date.toISOString().slice(0, 10),
             "reason": reason
         }
