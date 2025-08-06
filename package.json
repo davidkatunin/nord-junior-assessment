@@ -4,12 +4,25 @@
   "description": "Junior Assessment for Nord Security",
   "main": "script.ts",
   "scripts": {
-    "start": "ts-node script.ts"
+    "start": "ts-node ./src/script.ts",
+    "test": "jest"
   },
   "author": "David Katunin",
   "devDependencies": {
+    "@types/jest": "^30.0.0",
     "@types/node": "^24.1.0",
+    "jest": "^30.0.5",
+    "ts-jest": "^29.4.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.2"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "testMatch": ["**/*.test.ts", "**/test/*.ts"],
+    "collectCoverageFrom": [
+      "src/**/*.ts",
+      "!src/**/*.test.ts"
+    ]
   }
 }
